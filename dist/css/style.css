@@ -703,6 +703,12 @@ textarea {
 .text-right {
   text-align: right;
 }
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
 .btn {
   display: inline-block;
   padding: 8px 12px;
@@ -736,6 +742,33 @@ textarea {
 .btn-white {
   background-color: #fff;
   color: #555;
+}
+header {
+  width: 100%;
+}
+/*navbar*/
+.navbar .navbar-brand {
+  display: inline-block;
+  height: 80px;
+  width: 120px;
+  text-indent: -9999em;
+  background: url('../img/logo-xiaoyun.png') no-repeat center center;
+  background-size: 120px;
+}
+.navbar .navbar-menu {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.navbar .navbar-menu li {
+  display: inline-block;
+}
+.navbar .navbar-menu li a {
+  display: inline-block;
+  padding: 0 15px;
+  text-decoration: none;
+  line-height: 80px;
+  color: #222;
 }
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
@@ -849,4 +882,34 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-position: 0px 0px;
   width: 166px;
   height: 58px;
+}
+/*首页样式*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/*中间主要内容样式*/
+.main-content {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.column-wrap {
+  height: 100%;
+}
+.column-wrap .column-bg {
+  height: 100%;
+  width: 33.33%;
+  float: left;
+}
+.column-wrap .column-right {
+  background-color: #990;
+}
+.column-wrap .column-center {
+  background-color: #900;
+}
+.column-wrap .column-left {
+  background-color: #099;
 }
