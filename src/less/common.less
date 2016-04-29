@@ -1,13 +1,13 @@
 //图片精灵公共样式
 .icon {
   display: inline-block;
-  cursor:pointer;
+  cursor: pointer;
   transition: all .3s ease;
 }
 
 //容器样式
 .container {
-  position :relative;
+  position: relative;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -16,12 +16,30 @@
 }
 
 //间距样式
-.margin-right-10 { margin-right: 10px;}
+.margin-right-10 {
+  margin-right: 10px;
+}
 
 //文字相关样式
-.text-center { text-align: center;}
-.text-left { text-align: left;}
-.text-right { text-align: right;}
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+//定位相关
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
 
 //按钮样式
 .btn {
@@ -44,7 +62,54 @@
   -o-user-select: none;
   user-select: none;
 }
-.btn-ghost { border: 1px solid #ccc;}
-.btn-ghost:hover {border: 1px solid #27aac8; }
-.btn-primary { background-color: #27aac8;color: #fff;}
-.btn-white {background-color: #fff;color: #555;}
+
+.btn-ghost {
+  border: 1px solid #ccc;
+}
+
+.btn-ghost:hover {
+  border: 1px solid #27aac8;
+}
+
+.btn-primary {
+  background-color: #27aac8;
+  color: #fff;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #555;
+}
+
+//导航栏样式
+
+header {width: 100%;}
+
+/*navbar*/
+.navbar {
+  background-color: #eee;
+  .navbar-brand {
+    display: inline-block;
+    height: 80px;
+    width: 120px;
+    text-indent: -9999em;
+    background: url('../img/logo-xiaoyun.png') no-repeat center center;
+    background-size: 120px;
+  }
+  .navbar-menu {
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  .navbar-menu li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      padding: 0 15px;
+      text-decoration: none;
+      line-height: 80px;
+      color: #222;
+
+    }
+  }
+}
