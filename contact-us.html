@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>三斤耗儿鱼-联系我们</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--favicon写法如下，如不写，服务器将会在根目录寻找favicon.ico文件-->
+    <link href="favicon.ico" type="image/x-icon" rel=icon>
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+    <!--<link rel="stylesheet" href="dist/css/normalize.css">-->
+    <!--<link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <script src="dist/js/vendor/modernizr-2.6.2.min.js"></script>
+    <style>
+
+        #menu {
+            margin: -80px 0 0;
+            padding: 0;
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            list-style-type: none;
+            z-index: 70;
+        }
+
+        #menu li {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        #menu a {
+            float: left;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+        }
+
+        #menu .active a {
+            color: #fff;
+            background-color: #333;
+        }
+
+        .section {
+            text-align: center;
+            font: 50px "Microsoft Yahei";
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">您正在使用 <strong>过时</strong> 的浏览器. 请 <a href="http://browsehappy.com/">更新你的浏览器</a> or <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌浏览器框架</a>以提升您的浏览体验</p>
+<![endif]-->
+
+<!--导航栏-->
+<header class="fixed">
+    <nav class="navbar ">
+        <div class="container clearfix">
+            <a class="navbar-brand" href="javascript:;">logo-brand</a>
+            <ul class="navbar-menu clearfix">
+                <li><a href="index.html;">首页</a></li>
+                <li><a href="about-us.html">关于我们</a></li>
+                <li><a href="dynamit-news.html">新闻动态</a></li>
+                <li><a href="contact-us.html;">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<ul id="menu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>
+    <li data-menuanchor="page2"><a href="#page2">第二屏</a></li>
+    <li data-menuanchor="page3"><a href="#page3">第三屏</a></li>
+</ul>
+<div id="dowebok">
+    <div class="section">
+        <div class="slider-wrap" style="padding-right: 100px;">
+            <img class="loading-img" src="dist/img/bx_loader.gif" alt="loading">
+
+            <ul class="bxslider">
+                <li class="first-content"><img src="dist/img/bird.png"/>1</li>
+                <li class="not-ready"><img src="dist/img/bird.png"/>2</li>
+                <li class="not-ready"><img src="dist/img/bird.png"/>3</li>
+                <li class="not-ready"><img src="dist/img/bird.png"/>4</li>
+                <li class="not-ready"><img src="dist/img/bird.png"/>5</li>
+                <li class="not-ready"><img src="dist/img/bird.png"/>6</li>
+                <li class="not-ready"><img src="dist/img/bird.png"/>7</li>
+                <!--<li class="not-ready">-->
+                <!--<ul class="bxslider-horizontal">-->
+                <!--<li><img src="images/demo.jpg" /></li>-->
+                <!--<li><img src="images/demo.jpg" /></li>-->
+                <!--<li><img src="images/demo.jpg" /></li>-->
+                <!--<li><img src="images/demo.jpg" /></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+    </div>
+    <div class="section">
+        <h3>第二屏</h3>
+    </div>
+    <div class="section">
+        <h3>第三屏</h3>
+    </div>
+</div>
+
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+<script src="dist/js/plugins.js"></script>
+<script src="dist/js/main.js"></script>
+
+<script src="dist/js/vendor/jquery.easing.1.3.min.js"></script>
+<script src="dist/js/jquery.fullPage.min.js"></script>
+<script src="dist/js/jquery.bxslider.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.loading-img').css({display: 'none'});
+        $('.not-ready').css({display: 'block'});
+        $('.bxslider').bxSlider({
+//            mode:'vertical', //默认的是水平
+            slideWidth: 300,
+            minSlides: 2,
+            maxSlides: 4,
+            slideMargin: 10,
+            moveSlides: 2,
+            displaySlideQty: 1,//显示li的个数
+            moveSlideQty: 2,//移动li的个数
+            captions: true,//自动控制
+//            pager:false,//设置是否显示分页，设置为true时，会在滑动内容下方显示分页图标
+//            auto: true,//设置是否自动滑动
+//            pause:3000,	//自动滑动时停留时间，数字，ms
+            speed: 2000,//内容切换速度，数字，ms
+            controls: true,//是否显示左右按钮
+//            ticker: true,
+            autoHover: true,//当鼠标滑向滑动内容上时，是否暂停滑动
+
+//            buildPager: function(slideIndex){
+//                switch(slideIndex){
+//                    case 0:
+//                        return '<div class="">导航1</div>';
+//                    case 1:
+//                        return '<div style="font-size: inherit">导航2</div>';
+//                    case 2:
+//                        return '<div style="font-size: inherit">导航3</div>';
+//                }
+//            },
+
+            //自定义左右箭头
+//            nextSelector: '#slider-next',
+//            prevSelector: '#slider-prev',
+//            nextText: 'Onward →',
+//            prevText: '← Go back',
+
+            //更改过度曲线
+            useCSS: false,
+            infiniteLoop: false,
+            hideControlOnEnd: true,
+            easing: 'easeInOutBack',//过渡曲线，需要引入jquery.easing.js
+        });
+
+        $('.bxslider-horizontal').bxSlider();
+
+
+        $('#dowebok').fullpage({
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+            anchors: ['page1', 'page2', 'page3'],
+            menu: '#menu'
+        });
+
+    });
+</script>
+
+
+</body>
+</html>
