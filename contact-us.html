@@ -67,18 +67,21 @@
 <p class="chromeframe">您正在使用 <strong>过时</strong> 的浏览器. 请 <a href="http://browsehappy.com/">更新你的浏览器</a> or <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌浏览器框架</a>以提升您的浏览体验</p>
 <![endif]-->
 
-<!--导航栏-->
-<header class="fixed">
-    <nav class="navbar ">
-        <div class="container clearfix">
-            <a class="navbar-brand" href="javascript:;">logo-brand</a>
-            <ul class="navbar-menu clearfix">
-                <li><a href="index.html;">首页</a></li>
-                <li><a href="about-us.html">关于我们</a></li>
-                <li><a href="dynamit-news.html">新闻动态</a></li>
-                <li><a href="contact-us.html;">联系我们</a></li>
-            </ul>
-        </div>
+<input type="hidden" name="whichPages" value="contactUsPage">
+
+<!--导航菜单-->
+<header class="header">
+    <nav class="nav" id="navbar">
+        <a href="index.html" title="全聚德外卖" class="brand">
+            <img src="dist/img/logo-xiaoyun.png" alt="">
+        </a>
+        <img class="show-menu-icon" style="" src="dist/img/icon_menu.png" alt="">
+        <ul class="nav-menu">
+            <li id="indexPage" title="首页"><a href="index.html">首页</a></li>
+            <li id="dynamicNewsPage"><a href="dynamic-news.html" title="新闻动态">新闻动态</a></li>
+            <li id="contactUsPage"><a href="contact-us.html" title="联系我们">联系我们</a></li>
+            <li id="aboutUsPage"><a href="about-us.html">关于我们</a></li>
+        </ul>
     </nav>
 </header>
 

@@ -21,6 +21,9 @@
 }
 
 //文字相关样式
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
 .text-center {
   text-align: center;
 }
@@ -33,15 +36,20 @@
   text-align: right;
 }
 
-//定位相关
-.fixed {
-  position: fixed;
-  z-index: 999;
+//列表样式
+ol,ul {
+  padding: 0;
 }
-.absolute {
-  position: absolute;
-  z-index: 999;
+
+//链接样式
+a {
+  color: inherit;
+  text-decoration: none;
 }
+a:focus {
+  outline: 0;
+}
+
 
 //按钮样式
 .btn {
@@ -85,33 +93,163 @@
 
 //导航栏样式
 
-header {width: 100%;}
-
-/*navbar*/
-.navbar {
-  //background-color: #eee;
-  .navbar-brand {
-    display: inline-block;
-    height: 80px;
-    width: 120px;
-    text-indent: -9999em;
-    background: url('../img/logo-xiaoyun.png') no-repeat center center;
-    background-size: 120px;
+//导航条样式
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  .nav {
+    padding: 0 20px;
   }
-  .navbar-menu {
-    margin: 0;
-    padding: 0;
+  //商标样式
+  .brand {
+    display: inline-block;
+    padding: 10px 0;
+    img {
+      //display: none;
+      height: 0;
+      vertical-align: middle;
+    }
+  }
+  //右侧菜单样式
+  .nav-menu {
     float: right;
-  }
-  .navbar-menu li {
-    display: inline-block;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    li:hover a::before {
+      transform: scaleX(1);
+      opacity: 1;
+    }
     a {
       display: inline-block;
-      padding: 0 15px;
+      position: relative;
+      z-index: 10;
+      min-width: 80px;
+      padding: 4px 5px 5px;
+      color: white;
+      text-align: center;
       text-decoration: none;
-      line-height: 80px;
-      color: #222;
+    }
+    a::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #f15a22;
+      border-radius: 3px;
+      transform: scaleX(0.2);
+      opacity: 0;
+      transition: transform .2s ease-out, opacity .2s ease-out;
+    }
+    .active a {
+      border-radius: 3px;
+      background-color: #f15a22;
+    }
+  }
+  .show-menu-icon {
+    display: none;
+    float: right;
+    padding: 15px;
+    margin: 10px -10px 5px 10px;
+    cursor: pointer;
+  }
 
+}
+.header * {
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    .nav {
+      background: rgba(0,0,0,.7);
+    }
+    //商标样式
+    .brand {
+      padding: 10px 0;
+      img {
+        height:40px;
+      }
+    }
+    //右侧菜单样式
+    .nav-menu {
+      float: inherit;
+      height: 0;
+      width: 100%;
+      padding: 0 20px;
+      margin: 0 -20px;
+      overflow: hidden;
+      transition: height .3s ease;
+      li {
+        display: inherit;
+        margin: 10px 5px;
+      }
+      a {
+        display: block;
+      }
+    }
+    //小屏下展开菜单图标
+    .show-menu-icon {
+      display: inline-block;
+    }
+    .show-menu {
+      height:170px;
+      padding: 0 20px;
+    }
+  }
+}
+
+.nav-change-color {
+  transition: color .3s ease;
+
+}
+
+.nav-change-color {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+//顶部背景图样式
+.banner-contact {
+  background-image: url("../img/contact_top_bg.jpg");
+}
+.banner-dynamic {
+  background-image: url("../img/dynamic_top_bg.jpg");
+}
+.banner-about{
+  background-image: url("../img/about_top_bg.jpg");
+
+}
+.top-banner {
+  height: 400px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  .page-title {
+    padding-top: 130px;
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+  .page-introduce {
+    font-size: 28px;
+    font-weight: 100;
+  }
+}
+@media screen and (max-width: 640px) {
+  .top-banner {
+    height: 320px;
+    .page-title {
+      padding-top: 130px;
+      font-size: 36px;
+    }
+    .page-introduce {
+      font-size: 16px;
     }
   }
 }

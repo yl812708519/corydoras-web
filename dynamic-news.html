@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>
@@ -29,7 +29,7 @@
 <p class="chromeframe">您正在使用 <strong>过时</strong> 的浏览器. 请 <a href="http://browsehappy.com/">更新你的浏览器</a> or <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌浏览器框架</a>以提升您的浏览体验</p>
 <![endif]-->
 
-<input type="hidden" name="whichPages" value="indexPage">
+<input type="hidden" name="whichPages" value="dynamicNewsPage">
 
 <!--导航菜单-->
 <header class="header">
@@ -47,28 +47,64 @@
     </nav>
 </header>
 
+<!--内容-->
+<div class="dynamic-wrap"><!--这个盒子控制overflow的-->
 
-<!--中间内容区-->
-<section class="main-content text-center ">
-    <img src="dist/img/logo-xiaoyun.png" alt="logo">
+    <!--banner条-->
+    <div class="top-banner banner-dynamic text-center">
+        <h1 class="page-title">新闻动态</h1>
+        <p class="page-introduce">让您更好的了解我们</p>
+    </div>
+    <!--新闻列表-->
+    <div class="content-wrap content-dynamic-wrap">
+        <div class="container">
+            <div class="dynamic-list-wrap">
+                <ul class="dynamic-list clearfix text-left">
+                    <li class="list-item">
+                        <a class="dynamic-link" href="javascript:;" id="1">
+                            东来顺礼盒装，不用预约随时吃
+                            <span class="dynamic-time">2015.9.17</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pagination">
+                <a href="javascript:;" class="page-link current">1</a>
+                <a href="javascript:;" class="page-link">2</a>
+                <a href="javascript:;" class="page-link">3</a>
+                <a href="javascript:;" class="page-link">4</a>
+                <a href="javascript:;" class="page-link">5</a>
+                <a href="javascript:;" class="page-link">6</a>
+                <a href="javascript:;" class="page-link">7</a>
+                <a href="javascript:;" class="page-link">8</a>
+                <a href="javascript:;" class="page-link">9</a>
+                <a href="javascript:;" class="page-link">10</a>
+                <a href="javascript:;" class="page-link">...15</a>
 
-    <h1>反传统格调江湖菜</h1>
+                <a href="javascript:;" class="page-link page-next">下一页</a>
+            </div>
+        </div>
+    </div>
 
-    <p>三斤耗儿鱼＝新鲜的食材＋传统的工艺＋正宗重庆味道＋精品就餐体验</p>
-    <img src="dist/img/erwm.jpg" alt="微信二维码">
-</section>
+    <!--弹出层-->
+    <div class="dynamic-model ">
 
-<!--三列背景-->
-<section class="column-wrap">
-    <div class="column-bg column-right"></div>
-    <div class="column-bg column-center"></div>
-    <div class="column-bg column-left"></div>
-</section>
-
+        <div class="model-mask" title="关闭"></div>
+        <div class="model-content">
+            <div class="container">
+                <img class="model-close" src="dist/img/icon_close_silver.png" alt=""/>
+                <h1 class="text-center dynamic-content-title"></h1>
+                <div class="dynamic-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="dist/js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 <script src="dist/js/plugins.js"></script>
 <script src="dist/js/main.js"></script>
+
+<script src="dist/js/dynamic.js"></script>
 </body>
 </html>
