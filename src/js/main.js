@@ -44,7 +44,7 @@ $(document).ready(function () {
     });
 
 
-    //导航栏滑动一定距离添加白底
+    //导航栏滑动一定距离添加底色
     var scrollFunc = function (e) {
         e = e || window.event;
         if($(window).scrollTop()>250) {
@@ -53,4 +53,9 @@ $(document).ready(function () {
             $(".nav").removeClass('nav-change-color');
         }
     };
+
+    //首页背景图渐渐变大
+    $(".full-screen-bg").css({
+        "transform": "scale(1.1)"
+    });
 });

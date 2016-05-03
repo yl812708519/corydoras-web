@@ -35,9 +35,11 @@ body {
 }
 
 //文字相关样式
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, p{
   margin-top: 0;
 }
+
+
 .text-center {
   text-align: center;
 }
@@ -53,6 +55,7 @@ h1,h2,h3,h4,h5,h6 {
 //列表样式
 ul {
   list-style: none;
+  margin: 0;
 }
 ol,ul {
   padding: 0;
@@ -121,16 +124,16 @@ a:focus {
   //商标样式
   .brand {
     display: inline-block;
-    padding: 10px 0;
+    padding: 15px 0;
     img {
-      //display: none;
-      height: 0;
+      height: 70px;
       vertical-align: middle;
     }
   }
   //右侧菜单样式
   .nav-menu {
     float: right;
+    padding: 35px 0;
     li {
       display: inline-block;
       margin: 0 5px;
@@ -157,7 +160,7 @@ a:focus {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #f15a22;
+      background-color: #e60044;
       border-radius: 3px;
       transform: scaleX(0.2);
       opacity: 0;
@@ -165,7 +168,7 @@ a:focus {
     }
     .active a {
       border-radius: 3px;
-      background-color: #f15a22;
+      background-color: #e60044;
     }
   }
   .show-menu-icon {

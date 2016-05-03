@@ -1070,7 +1070,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-top: 0;
 }
 .text-center {
@@ -1084,6 +1085,7 @@ h6 {
 }
 ul {
   list-style: none;
+  margin: 0;
 }
 ol,
 ul {
@@ -1140,14 +1142,15 @@ a:focus {
 }
 .header .brand {
   display: inline-block;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .header .brand img {
-  height: 0;
+  height: 70px;
   vertical-align: middle;
 }
 .header .nav-menu {
   float: right;
+  padding: 35px 0;
 }
 .header .nav-menu li {
   display: inline-block;
@@ -1176,7 +1179,7 @@ a:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #f15a22;
+  background-color: #e60044;
   border-radius: 3px;
   -webkit-transform: scaleX(0.2);
           transform: scaleX(0.2);
@@ -1188,7 +1191,7 @@ a:focus {
 }
 .header .nav-menu .active a {
   border-radius: 3px;
-  background-color: #f15a22;
+  background-color: #e60044;
 }
 .header .show-menu-icon {
   display: none;
@@ -1407,27 +1410,58 @@ body {
   height: 100%;
   width: 100%;
   text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  /*防止放大过程中，出现滚动条*/
+}
+.main-content-wrap .full-screen-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #222 url('../img/index-bg.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-transition: -webkit-transform 14s ease-out;
+  transition: -webkit-transform 14s ease-out;
+  transition: transform 14s ease-out;
+  transition: transform 14s ease-out, -webkit-transform 14s ease-out;
 }
 .main-content-wrap .main-content {
+  position: relative;
   display: table-cell;
   vertical-align: middle;
+  color: #fff;
 }
-.column-wrap {
-  height: 100%;
+.main-content-wrap .main-content .index-title {
+  font-size: 58px;
+  margin-bottom: 20px;
 }
-.column-wrap .column-bg {
-  height: 100%;
-  width: 33.33%;
-  float: left;
+.main-content-wrap .main-content .index-introduce {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 28px;
+  margin-bottom: 35px;
+  font-weight: 100;
 }
-.column-wrap .column-right {
-  background-color: #990;
+.main-content-wrap .main-content .index-erweima {
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
 }
-.column-wrap .column-center {
-  background-color: #900;
+.main-content-wrap .main-content .index-erweima-tip {
+  font-size: 18px;
 }
-.column-wrap .column-left {
-  background-color: #099;
+@media screen and (max-width: 700px) {
+  .main-content-wrap .main-content .index-title {
+    font-size: 30px;
+  }
+  .main-content-wrap .main-content .index-introduce {
+    padding: 0 15px;
+    font-size: 16px;
+  }
+  .main-content-wrap .main-content .index-erweima {
+    width: 180px;
+  }
 }
 #menu {
   margin: -80px 0 0;
