@@ -11,6 +11,32 @@
   .part-right {
     float:right;
   }
+  .contact-title {
+    font-size: 24px;
+    color: #f15a22;
+  }
+  .contact-info {
+    li {
+      padding: 7px 5px 7px 50px;
+      border-bottom: 1px solid #e6e1dd;
+      white-space: nowrap;
+      background-repeat: no-repeat;
+      background-position: left 5px center;
+      background-size: 25px 25px;
+    }
+    .contact-icon-location {
+      background-image: url("../img/icon_location.png");
+    }
+    .contact-icon-phone {
+      background-image: url("../img/icon_phone.png");
+    }
+    .contact-icon-fax {
+      background-image: url("../img/icon_fax.png");
+    }
+    .contact-icon-email {
+      background-image: url("../img/icon_email.png");
+    }
+  }
 
   //百度地图样式
   .baidu-map {
@@ -22,6 +48,17 @@
   @media screen and (max-width:1100px) {
     padding: 48px 15px;
     font-size: 16px;
+    .contact-info {
+      li {
+        padding: 7px 5px 7px 30px;
+        background-position: left 5px center;
+        background-size: 20px 20px;
+      }
+    }
+    .contact-title {
+      text-align: center;
+      font-size: 20px;
+    }
     .baidu-map {
       width:500px;
       height: 420px;

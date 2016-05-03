@@ -1,6 +1,15 @@
 //bxslider插件对body设置了overflow,这里修改过来
 body {
-  overflow: scroll;
+  overflow-y: auto;
+}
+
+//全屏大小样式
+.full-size {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 //图片精灵公共样式
@@ -17,7 +26,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 980px;
+  max-width: 1180px;
 }
 
 //间距样式
@@ -42,6 +51,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 //列表样式
+ul {
+  list-style: none;
+}
 ol,ul {
   padding: 0;
 }
@@ -227,7 +239,6 @@ a:focus {
 }
 .banner-about{
   background-image: url("../img/about_top_bg.jpg");
-
 }
 .top-banner {
   height: 400px;

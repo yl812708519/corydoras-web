@@ -1039,7 +1039,14 @@ ul.bxslider {
   padding: 10px;
 }
 body {
-  overflow: scroll;
+  overflow-y: auto;
+}
+.full-size {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .icon {
   display: inline-block;
@@ -1053,7 +1060,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 980px;
+  max-width: 1180px;
 }
 .margin-right-10 {
   margin-right: 10px;
@@ -1074,6 +1081,9 @@ h6 {
 }
 .text-right {
   text-align: right;
+}
+ul {
+  list-style: none;
 }
 ol,
 ul {
@@ -1391,13 +1401,16 @@ body {
   height: 100%;
 }
 /*中间主要内容样式*/
-.main-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 99;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.main-content-wrap {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.main-content-wrap .main-content {
+  display: table-cell;
+  vertical-align: middle;
 }
 .column-wrap {
   height: 100%;
@@ -1415,6 +1428,35 @@ body {
 }
 .column-wrap .column-left {
   background-color: #099;
+}
+#menu {
+  margin: -80px 0 0;
+  padding: 0;
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  list-style-type: none;
+  z-index: 70;
+}
+#menu li {
+  margin: 0;
+  font-size: 14px;
+}
+#menu a {
+  float: left;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+}
+#menu .active a {
+  color: #fff;
+  background-color: #333;
+}
+.section {
+  text-align: center;
+  font: 50px "Microsoft Yahei";
+  color: #fff;
 }
 .content-wrap {
   position: relative;
@@ -1562,6 +1604,30 @@ body {
 .contact-us .part-right {
   float: right;
 }
+.contact-us .contact-title {
+  font-size: 24px;
+  color: #f15a22;
+}
+.contact-us .contact-info li {
+  padding: 7px 5px 7px 50px;
+  border-bottom: 1px solid #e6e1dd;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-position: left 5px center;
+  background-size: 25px 25px;
+}
+.contact-us .contact-info .contact-icon-location {
+  background-image: url("../img/icon_location.png");
+}
+.contact-us .contact-info .contact-icon-phone {
+  background-image: url("../img/icon_phone.png");
+}
+.contact-us .contact-info .contact-icon-fax {
+  background-image: url("../img/icon_fax.png");
+}
+.contact-us .contact-info .contact-icon-email {
+  background-image: url("../img/icon_email.png");
+}
 .contact-us .baidu-map {
   width: 620px;
   height: 550px;
@@ -1573,6 +1639,15 @@ body {
   .contact-us {
     padding: 48px 15px;
     font-size: 16px;
+  }
+  .contact-us .contact-info li {
+    padding: 7px 5px 7px 30px;
+    background-position: left 5px center;
+    background-size: 20px 20px;
+  }
+  .contact-us .contact-title {
+    text-align: center;
+    font-size: 20px;
   }
   .contact-us .baidu-map {
     width: 500px;
