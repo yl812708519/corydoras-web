@@ -11,7 +11,7 @@ html, body {
   height: 100%;
   width: 100%;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0,0,0,.75);
+  text-shadow: 2px 2px 5px rgba(0,0,0,.5);
   overflow: hidden;/*防止放大过程中，出现滚动条*/
   .full-screen-bg {
     position: absolute;
@@ -21,6 +21,7 @@ html, body {
     left: 0;
     background: #222 url('../img/index-bg.jpg') no-repeat center center;
     background-size: cover;
+    zoom: 0.5\9;
     transition: transform 14s ease-out;
   }
   .main-content {
@@ -42,7 +43,7 @@ html, body {
 
     .index-erweima {
       margin-bottom: 10px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,.75);
+      box-shadow: 2px 2px 8px rgba(0,0,0,.5);
     }
 
     .index-erweima-tip {

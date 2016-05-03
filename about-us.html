@@ -37,7 +37,7 @@
 <header class="header">
     <nav class="nav" id="navbar">
         <a href="index.html" title="全聚德外卖" class="brand">
-            <img src="dist/img/logo-xiaoyun.png" alt="">
+            <img src="dist/img/logo.png" alt="">
         </a>
         <img class="show-menu-icon" style="" src="dist/img/icon_menu.png" alt="">
         <ul class="nav-menu">
@@ -50,47 +50,69 @@
 </header>
 
 
-<ul id="menu">
+<ul id="menu" style="display: none;">
     <li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>
     <li data-menuanchor="page2"><a href="#page2">第二屏</a></li>
     <li data-menuanchor="page3"><a href="#page3">第三屏</a></li>
 </ul>
 <div id="dowebok">
     <div class="section">
-        <div class="container">
+        <div class="full-page-child-wrap">
+            <!--banner条-->
+            <div class="top-banner banner-contact text-center">
+                <h1 class="page-title">三斤耗儿鱼－品牌</h1>
+                <p class="page-introduce">期待您真诚的反馈</p>
+            </div>
 
+            <div class="container">
+                dfsd
+            </div>
         </div>
+
+
     </div>
     <div class="section">
-        <div class="container">
-            <ul class="bxslider">
-                <li ><img src="dist/img/bird.png"/>1</li>
-                <li ><img src="dist/img/bird.png"/>2</li>
-                <li ><img src="dist/img/bird.png"/>3</li>
-                <li ><img src="dist/img/bird.png"/>4</li>
-                <li ><img src="dist/img/bird.png"/>5</li>
-                <li ><img src="dist/img/bird.png"/>6</li>
-                <li ><img src="dist/img/bird.png"/>7</li>
-            </ul>
+        <div class="full-page-child-wrap">
+            <!--banner条-->
+            <div class="top-banner banner-contact text-center">
+                <h1 class="page-title">三斤耗儿鱼－菜品</h1>
+                <p class="page-introduce">期待您真诚的反馈</p>
+            </div>
+
+            <div class="container">
+                <ul class="bxslider">
+                    <li ><img src="dist/img/bird.png"/>1</li>
+                    <li ><img src="dist/img/bird.png"/>2</li>
+                    <li ><img src="dist/img/bird.png"/>3</li>
+                    <li ><img src="dist/img/bird.png"/>4</li>
+                    <li ><img src="dist/img/bird.png"/>5</li>
+                    <li ><img src="dist/img/bird.png"/>6</li>
+                    <li ><img src="dist/img/bird.png"/>7</li>
+                </ul>
+            </div>
         </div>
+
     </div>
     <div class="section">
-        <div class="container">
-            <ul class="bxslider2">
-                <li ><img src="dist/img/bird.png"/>1</li>
-                <li ><img src="dist/img/bird.png"/>2</li>
-                <li ><img src="dist/img/bird.png"/>3</li>
-                <li >
-                    <ul class="bxslider3">
-                        <li ><img src="dist/img/bird.png"/>1</li>
-                        <li ><img src="dist/img/bird.png"/>1</li>
-                        <li ><img src="dist/img/bird.png"/>1</li>
-                    </ul>
-                </li>
-                <li ><img src="dist/img/bird.png"/>5</li>
-                <li ><img src="dist/img/bird.png"/>6</li>
-                <li ><img src="dist/img/bird.png"/>7</li>
-            </ul>
+        <div class="full-page-child-wrap">
+
+            <!--banner条-->
+            <div class="top-banner banner-contact text-center">
+                <h1 class="page-title">三斤耗儿鱼－店铺</h1>
+                <p class="page-introduce">期待您真诚的反馈</p>
+            </div>
+
+            <div class="container">
+                <ul class="bxslider">
+                    <li ><img src="dist/img/bird.png"/>1</li>
+                    <li ><img src="dist/img/bird.png"/>2</li>
+                    <li ><img src="dist/img/bird.png"/>3</li>
+                    <li ><img src="dist/img/bird.png"/>4</li>
+                    <li ><img src="dist/img/bird.png"/>5</li>
+                    <li ><img src="dist/img/bird.png"/>6</li>
+                    <li ><img src="dist/img/bird.png"/>7</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -161,9 +183,13 @@
 
         $('#dowebok').fullpage({
             sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-            anchors: ['page1', 'page2', 'page3'],
-            menu: '#menu',
+            navigation:true,
+            css3: false,
+//           easeInCirc,easeInQuint,
+            easing: 'easeInCirc',
         });
+
+
 
     });
 </script>

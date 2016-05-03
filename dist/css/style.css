@@ -1410,7 +1410,7 @@ body {
   height: 100%;
   width: 100%;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   /*防止放大过程中，出现滚动条*/
 }
@@ -1422,6 +1422,7 @@ body {
   left: 0;
   background: #222 url('../img/index-bg.jpg') no-repeat center center;
   background-size: cover;
+  zoom: 0.5\9;
   -webkit-transition: -webkit-transform 14s ease-out;
   transition: -webkit-transform 14s ease-out;
   transition: transform 14s ease-out;
@@ -1446,7 +1447,7 @@ body {
 }
 .main-content-wrap .main-content .index-erweima {
   margin-bottom: 10px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 .main-content-wrap .main-content .index-erweima-tip {
   font-size: 18px;
@@ -1491,6 +1492,9 @@ body {
   text-align: center;
   font: 50px "Microsoft Yahei";
   color: #fff;
+}
+.full-page-child-wrap {
+  height: 100%;
 }
 .content-wrap {
   position: relative;
