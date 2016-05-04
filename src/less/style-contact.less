@@ -13,28 +13,22 @@
   }
   .contact-title {
     font-size: 24px;
-    color: #f15a22;
   }
   .contact-info {
     li {
-      padding: 7px 5px 7px 50px;
+      padding: 7px 5px;
       border-bottom: 1px solid #e6e1dd;
-      white-space: nowrap;
-      background-repeat: no-repeat;
-      background-position: left 5px center;
-      background-size: 25px 25px;
+      //white-space: nowrap;
     }
-    .contact-icon-location {
-      background-image: url("../img/icon_location.png");
-    }
-    .contact-icon-phone {
-      background-image: url("../img/icon_phone.png");
-    }
-    .contact-icon-fax {
-      background-image: url("../img/icon_fax.png");
-    }
-    .contact-icon-email {
-      background-image: url("../img/icon_email.png");
+    .contact-info-title {
+      display:inline-block;
+      width: 72px;
+      word-spacing:-1em;/*调整文本，以防止使用两端对齐之后字间距过大*/
+      text-align:justify;
+      text-justify:distribute-all-lines;/*ie6-8*/
+      text-align-last:justify;/* ie9*/
+      -moz-text-align-last:justify;/*ff*/
+      -webkit-text-align-last:justify;/*chrome 20+*/
     }
   }
 
@@ -48,13 +42,6 @@
   @media screen and (max-width:1100px) {
     padding: 48px 15px;
     font-size: 16px;
-    .contact-info {
-      li {
-        padding: 7px 5px 7px 30px;
-        background-position: left 5px center;
-        background-size: 20px 20px;
-      }
-    }
     .contact-title {
       text-align: center;
       font-size: 20px;
@@ -64,7 +51,7 @@
       height: 420px;
     }
   }
-  @media screen and (max-width:880px) {
+  @media screen and (max-width:920px) {
     .part-left,.part-right {
       width: 100%;
     }

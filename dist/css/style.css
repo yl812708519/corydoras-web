@@ -70,7 +70,7 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: "Microsoft YaHei", "黑体", "宋体";
 }
 /**
  * Address margins handled incorrectly in IE 6/7.
@@ -1051,8 +1051,6 @@ body {
 .icon {
   display: inline-block;
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 .container {
   position: relative;
@@ -1247,17 +1245,23 @@ a:focus {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .banner-contact {
-  background-image: url("../img/contact_top_bg.jpg");
+  background-image: url("../img/banner_contact.jpg");
 }
 .banner-dynamic {
-  background-image: url("../img/dynamic_top_bg.jpg");
+  background-image: url("../img/banner_dynamic.jpg");
 }
-.banner-about {
-  background-image: url("../img/about_top_bg.jpg");
+.banner-about-brand {
+  background-image: url("../img/banner_about_brand.png");
+}
+.banner-about-dish {
+  background-image: url("../img/banner_about_dish.png");
+}
+.banner-about-store {
+  background-image: url("../img/banner_about_store.png");
 }
 .top-banner {
   height: 400px;
-  background-color: #333;
+  background-color: #f1f0e9;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1284,6 +1288,14 @@ a:focus {
     font-size: 16px;
   }
 }
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #5f5f5c;
+}
+.footer p {
+  margin: 10px 0;
+}
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
 
@@ -1295,107 +1307,41 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.icon-arrow {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -88px -88px;
-  width: 7px;
-  height: 12px;
-}
-.icon-arrow:hover {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -148px -72px;
-  width: 7px;
-  height: 12px;
-}
-.icon-icon_arrow {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -155px -72px;
-  width: 7px;
-  height: 12px;
-}
-.icon-icon_arrow_big_silver {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -50px -132px;
-  width: 10px;
-  height: 19px;
-}
-.icon-icon_arrow_big_white-hover {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -40px -132px;
-  width: 10px;
-  height: 19px;
-}
-.icon-icon_arrow_next {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: 0px -132px;
-  width: 20px;
-  height: 32px;
-}
-.icon-icon_arrow_prev {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -20px -132px;
-  width: 20px;
-  height: 32px;
-}
 .icon-icon_close_silver {
   background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -44px -58px;
-  width: 44px;
-  height: 44px;
-}
-.icon-icon_close_white {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: 0px -58px;
-  width: 44px;
-  height: 44px;
-}
-.icon-icon_email {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -118px -58px;
-  width: 30px;
-  height: 30px;
-}
-.icon-icon_fax {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -88px -58px;
-  width: 30px;
-  height: 30px;
-}
-.icon-icon_location {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: 0px -102px;
-  width: 30px;
-  height: 30px;
-}
-.icon-icon_menu {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -148px -58px;
-  width: 18px;
-  height: 14px;
-}
-.icon-icon_phone {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -30px -102px;
-  width: 30px;
-  height: 30px;
-}
-.icon-icon_weixin {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -80px -102px;
-  width: 20px;
-  height: 18px;
-}
-.icon-icon_weixin:hover {
-  background-image: url(../../dist/img/spirit/sprite.png);
-  background-position: -60px -102px;
-  width: 20px;
-  height: 18px;
-}
-.icon-logo {
-  background-image: url(../../dist/img/spirit/sprite.png);
   background-position: 0px 0px;
-  width: 166px;
-  height: 58px;
+  width: 44px;
+  height: 44px;
+}
+.icon-icon_close_silver:hover {
+  background-image: url(../../dist/img/spirit/sprite.png);
+  background-position: -44px 0px;
+  width: 44px;
+  height: 44px;
+}
+.icon-icon_next {
+  background-image: url(../../dist/img/spirit/sprite.png);
+  background-position: 0px -44px;
+  width: 25px;
+  height: 47px;
+}
+.icon-icon_next:hover {
+  background-image: url(../../dist/img/spirit/sprite.png);
+  background-position: -25px -44px;
+  width: 25px;
+  height: 47px;
+}
+.icon-icon_prev {
+  background-image: url(../../dist/img/spirit/sprite.png);
+  background-position: -50px -44px;
+  width: 25px;
+  height: 47px;
+}
+.icon-icon_prev:hover {
+  background-image: url(../../dist/img/spirit/sprite.png);
+  background-position: -88px 0px;
+  width: 25px;
+  height: 47px;
 }
 /*首页样式*/
 html,
@@ -1464,37 +1410,109 @@ body {
     width: 180px;
   }
 }
-#menu {
-  margin: -80px 0 0;
-  padding: 0;
-  position: fixed;
-  right: 15px;
+.slider-wrap {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: inherit;
+}
+#fp-nav {
+  top: 66.9%;
+}
+@media screen and (max-width: 640px) {
+  #fp-nav {
+    top: 63.2%;
+  }
+}
+#fp-nav ul li {
+  margin: 2px;
+  height: inherit;
+  width: inherit;
+}
+#fp-nav ul li a {
+  padding: 10px;
+  height: inherit;
+  width: inherit;
+}
+#fp-nav ul li a span {
+  height: 11px;
+  width: 11px;
+  border: 0;
+  background-color: #c9c9c9;
+  top: 9px;
+  left: 9px;
+}
+#fp-nav ul li a.active span {
+  background-color: #e60044;
+}
+#fp-nav.right {
+  right: 10px;
+}
+@media screen and (max-width: 640px) {
+  #fp-nav.right {
+    right: 0;
+  }
+}
+.slider-control-wrap {
+  position: absolute;
   top: 50%;
-  list-style-type: none;
-  z-index: 70;
+  left: 15px;
+  right: 15px;
 }
-#menu li {
-  margin: 0;
-  font-size: 14px;
+.slider-control-wrap a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-indent: 9999em;
 }
-#menu a {
+.slider-control-wrap .icon-icon_prev {
   float: left;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #333;
-  text-decoration: none;
 }
-#menu .active a {
-  color: #fff;
-  background-color: #333;
-}
-.section {
-  text-align: center;
-  font: 50px "Microsoft Yahei";
-  color: #fff;
+.slider-control-wrap .icon-icon_next {
+  float: right;
 }
 .full-page-child-wrap {
   height: 100%;
+}
+.slider-child {
+  padding: 30px 0 10px;
+}
+.slider-child .slider-text {
+  text-align: justify;
+  text-indent: 2em;
+  font-size: 18px;
+  color: #232323;
+  line-height: 2;
+  margin-bottom: 0;
+}
+.slider-child .slider-img {
+  float: right;
+  margin-left: 100px;
+}
+.slider-table {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 400px;
+  display: table;
+}
+.slider-table .slider-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media screen and (max-width: 640px) {
+  .slider-table {
+    padding-top: 320px;
+  }
+}
+.full-page-child-wrap .top-banner .page-title {
+  padding-top: 150px;
 }
 .content-wrap {
   position: relative;
@@ -1507,7 +1525,7 @@ body {
   padding-bottom: 100px;
 }
 .dynamic-list-wrap {
-  min-height: 314px;
+  min-height: 257px;
 }
 @media screen and (max-width: 640px) {
   .content-dynamic-wrap {
@@ -1578,7 +1596,7 @@ body {
   background-position: right 5px center;
 }
 .pagination .page-next:hover {
-  background-image: url("../img/icon_arrow_big_white.png");
+  background-image: url("../../icon_arrow_big_white.png");
 }
 .dynamic-wrap {
   overflow: hidden;
@@ -1644,27 +1662,25 @@ body {
 }
 .contact-us .contact-title {
   font-size: 24px;
-  color: #f15a22;
 }
 .contact-us .contact-info li {
-  padding: 7px 5px 7px 50px;
+  padding: 7px 5px;
   border-bottom: 1px solid #e6e1dd;
-  white-space: nowrap;
-  background-repeat: no-repeat;
-  background-position: left 5px center;
-  background-size: 25px 25px;
 }
-.contact-us .contact-info .contact-icon-location {
-  background-image: url("../img/icon_location.png");
-}
-.contact-us .contact-info .contact-icon-phone {
-  background-image: url("../img/icon_phone.png");
-}
-.contact-us .contact-info .contact-icon-fax {
-  background-image: url("../img/icon_fax.png");
-}
-.contact-us .contact-info .contact-icon-email {
-  background-image: url("../img/icon_email.png");
+.contact-us .contact-info .contact-info-title {
+  display: inline-block;
+  width: 72px;
+  word-spacing: -1em;
+  /*调整文本，以防止使用两端对齐之后字间距过大*/
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  /*ie6-8*/
+  text-align-last: justify;
+  /* ie9*/
+  -moz-text-align-last: justify;
+  /*ff*/
+  -webkit-text-align-last: justify;
+  /*chrome 20+*/
 }
 .contact-us .baidu-map {
   width: 620px;
@@ -1678,11 +1694,6 @@ body {
     padding: 48px 15px;
     font-size: 16px;
   }
-  .contact-us .contact-info li {
-    padding: 7px 5px 7px 30px;
-    background-position: left 5px center;
-    background-size: 20px 20px;
-  }
   .contact-us .contact-title {
     text-align: center;
     font-size: 20px;
@@ -1692,7 +1703,7 @@ body {
     height: 420px;
   }
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 920px) {
   .contact-us .part-left,
   .contact-us .part-right {
     width: 100%;

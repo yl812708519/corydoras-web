@@ -9,8 +9,8 @@ function initMap(){
 //创建地图函数：
 function createMap(){
     var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-    var point = new BMap.Point(116.393325,39.905378);//定义一个中心点坐标
-    map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
+    var point = new BMap.Point(106.545106,29.58519);//定义一个中心点坐标
+    map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
     window.map = map;//将map变量存储在全局
 }
 
@@ -36,7 +36,7 @@ function addMapControl(){
 }
 
 //标注点数组
-var markerArr = [{title:"北京鸭哥科技有限公司",content:"电话：400-891-7222<br/>传真：63135221<br/>邮箱：vip@xiaoyage.com",point:"116.390998|39.905129",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+var markerArr = [{title:"三斤耗儿鱼",content:"订餐热线：023-63997288<br/>合作热线：023-63261886<br/>邮箱：sanjin@liziba.com",point:"106.544788|29.585111",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
 ];
 //创建marker
 function addMarker(){

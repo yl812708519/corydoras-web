@@ -16,7 +16,7 @@ body {
 .icon {
   display: inline-block;
   cursor: pointer;
-  transition: all .3s ease;
+  //transition: all .3s ease;
 }
 
 //容器样式
@@ -235,17 +235,23 @@ a:focus {
 
 //顶部背景图样式
 .banner-contact {
-  background-image: url("../img/contact_top_bg.jpg");
+  background-image: url("../img/banner_contact.jpg");
 }
 .banner-dynamic {
-  background-image: url("../img/dynamic_top_bg.jpg");
+  background-image: url("../img/banner_dynamic.jpg");
 }
-.banner-about{
-  background-image: url("../img/about_top_bg.jpg");
+.banner-about-brand{
+  background-image: url("../img/banner_about_brand.png");
+}
+.banner-about-dish{
+  background-image: url("../img/banner_about_dish.png");
+}
+.banner-about-store{
+  background-image: url("../img/banner_about_store.png");
 }
 .top-banner {
   height: 400px;
-  background-color: #333;
+  background-color: #f1f0e9;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -270,5 +276,16 @@ a:focus {
     .page-introduce {
       font-size: 16px;
     }
+  }
+}
+
+//页脚footer样式
+.footer {
+  padding: 20px 0;
+
+  color: #fff;
+  background-color: #5f5f5c;
+  p {
+    margin: 10px 0;
   }
 }

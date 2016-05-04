@@ -1,36 +1,78 @@
-//滚动菜单样式
-#menu {
-  margin: -80px 0 0;
-  padding: 0;
-  position: fixed;
-  right: 15px;
+//重置bxslider样式
+
+//重置容器样式
+.slider-wrap {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: inherit;
+  //padding-right: 50px;
+  //padding-left: 50px;
+}
+
+//重置导航项目样式，导航点
+#fp-nav {
+  top: 66.9%;
+  @media screen and (max-width: 640px) {
+    top: 63.2%;
+  }
+
+  ul {
+    li {
+      margin: 2px;
+      height: inherit;
+      width: inherit;
+      a {
+        padding: 10px;
+        height: inherit;
+        width: inherit;
+        span {
+          height: 11px;
+          width: 11px;
+          border: 0;
+          background-color: #c9c9c9;
+          top: 9px;
+          left: 9px;
+        }
+      }
+      a.active {
+        span {
+          background-color: #e60044;
+        }
+      }
+    }
+  }
+}
+
+#fp-nav.right {
+  right: 10px;
+  @media screen and (max-width: 640px) {
+    right: 0;
+  }
+}
+
+//全屏滚动，左右箭头样式
+.slider-control-wrap {
+  position: absolute;
   top: 50%;
-  list-style-type: none;
-  z-index: 70;
-}
-
-#menu li {
-  margin: 0;
-  font-size: 14px;
-}
-
-#menu a {
-  float: left;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #333;
-  text-decoration: none;
-}
-
-#menu .active a {
-  color: #fff;
-  background-color: #333;
-}
-
-.section {
-  text-align: center;
-  font: 50px "Microsoft Yahei";
-  color: #fff;
+  left: 15px;
+  right: 15px;
+  a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-indent: 9999em;
+  }
+  .icon-icon_prev {
+    float: left;
+  }
+  .icon-icon_next {
+    float: right;
+  }
 }
 
 //全屏滚动slider样式
@@ -38,6 +80,46 @@
   height: 100%;
 }
 
+.slider-child {
+  padding: 30px 0 10px;
+  .slider-text {
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 18px;
+    color: #232323;
+    line-height: 2;
+    margin-bottom: 0;
+  }
+  .slider-img {
+    float: right;
+    margin-left: 100px;
+  }
+}
+
+//全屏滚动，子元素，去掉banner条后，内容在剩下的高度中居中。
+.slider-table {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 400px;
+  display: table;
+  .slider-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding-top: 320px;
+  }
+}
 
 //全屏滚动banner样式
+.full-page-child-wrap {
+  .top-banner .page-title {
+    padding-top: 150px;
+  }
+}
 
