@@ -16,9 +16,11 @@
 
 //重置导航项目样式，导航点
 #fp-nav {
-  top: 66.9%;
+  padding-top: 400px;
+  margin-top: -246px!important;
+
   @media screen and (max-width: 640px) {
-    top: 63.2%;
+    margin-top: -286px!important;
   }
 
   ul {
@@ -80,32 +82,34 @@
   height: 100%;
 }
 
-.slider-child {
-  padding: 30px 0 10px;
-  .slider-text {
+.slider-text-wrap {
+  padding: 30px 0 10px ;
+  margin-right: 370px;
+  float:left;
+  p {
     text-align: justify;
     text-indent: 2em;
-    font-size: 18px;
+    font-size: 17px;
     color: #232323;
     line-height: 2;
     margin-bottom: 0;
   }
-  .slider-img {
-    float: right;
-    margin-left: 100px;
-  }
+}
+.slider-img-wrap {
+  padding-top: 30px;
+  float: left;
+  margin-left: -340px;
 }
 
 //全屏滚动，子元素，去掉banner条后，内容在剩下的高度中居中。
 .slider-table {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 400px;
   display: table;
+  vertical-align: middle;
+  height: 100%;
+  margin-top: -400px;
+  padding-top: 400px;
+  box-sizing: border-box;
+  width: 100%;
   .slider-table-cell {
     display: table-cell;
     vertical-align: middle;
@@ -113,6 +117,7 @@
 
   @media screen and (max-width: 640px) {
     padding-top: 320px;
+    margin-top: -320px;
   }
 }
 

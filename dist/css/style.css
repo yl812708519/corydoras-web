@@ -1368,7 +1368,6 @@ body {
   left: 0;
   background: #222 url('../img/index-bg.jpg') no-repeat center center;
   background-size: cover;
-  zoom: 0.5\9;
   -webkit-transition: -webkit-transform 14s ease-out;
   transition: -webkit-transform 14s ease-out;
   transition: transform 14s ease-out;
@@ -1420,11 +1419,12 @@ body {
   background: inherit;
 }
 #fp-nav {
-  top: 66.9%;
+  padding-top: 400px;
+  margin-top: -246px !important;
 }
 @media screen and (max-width: 640px) {
   #fp-nav {
-    top: 63.2%;
+    margin-top: -286px !important;
   }
 }
 #fp-nav ul li {
@@ -1477,30 +1477,32 @@ body {
 .full-page-child-wrap {
   height: 100%;
 }
-.slider-child {
-  padding: 30px 0 10px;
+.slider-text-wrap {
+  padding: 30px 0 10px ;
+  margin-right: 370px;
+  float: left;
 }
-.slider-child .slider-text {
+.slider-text-wrap p {
   text-align: justify;
   text-indent: 2em;
-  font-size: 18px;
+  font-size: 17px;
   color: #232323;
   line-height: 2;
   margin-bottom: 0;
 }
-.slider-child .slider-img {
-  float: right;
-  margin-left: 100px;
+.slider-img-wrap {
+  padding-top: 30px;
+  float: left;
+  margin-left: -340px;
 }
 .slider-table {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 400px;
   display: table;
+  vertical-align: middle;
+  height: 100%;
+  margin-top: -400px;
+  padding-top: 400px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .slider-table .slider-table-cell {
   display: table-cell;
@@ -1509,6 +1511,7 @@ body {
 @media screen and (max-width: 640px) {
   .slider-table {
     padding-top: 320px;
+    margin-top: -320px;
   }
 }
 .full-page-child-wrap .top-banner .page-title {
