@@ -16,11 +16,11 @@
 
 //重置导航项目样式，导航点
 #fp-nav {
-  padding-top: 400px;
-  margin-top: -246px!important;
+  padding-top: @banner-height-big;
+  margin-top: -270px !important;
 
-  @media screen and (max-width: 640px) {
-    margin-top: -286px!important;
+  @media screen and (max-width: 700px) {
+    margin-top: -348px !important;
   }
 
   ul {
@@ -43,7 +43,7 @@
       }
       a.active {
         span {
-          background-color: #e60044;
+          background-color: @mainColor;
         }
       }
     }
@@ -52,7 +52,7 @@
 
 #fp-nav.right {
   right: 10px;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 700px) {
     right: 0;
   }
 }
@@ -63,11 +63,12 @@
   top: 50%;
   left: 15px;
   right: 15px;
+  margin-top: -24px;
   a {
     display: inline-block;
     height: 100%;
     width: 100%;
-    text-indent: 9999em;
+
   }
   .icon-icon_prev {
     float: left;
@@ -83,9 +84,12 @@
 }
 
 .slider-text-wrap {
-  padding: 30px 0 10px ;
-  margin-right: 370px;
-  float:left;
+  padding: 30px 0 10px;
+  float: left;
+  .slider-img {
+    float: right;
+    margin-left: 50px;
+  }
   p {
     text-align: justify;
     text-indent: 2em;
@@ -95,10 +99,30 @@
     margin-bottom: 0;
   }
 }
-.slider-img-wrap {
-  padding-top: 30px;
-  float: left;
-  margin-left: -340px;
+
+@media screen and (max-width: 800px) {
+  .slider-text-wrap {
+    .slider-img {
+      width: 270px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slider-text-wrap {
+    padding-top: 5px;
+    .slider-img {
+      display: none;
+    }
+    p {
+      line-height: 1;
+      font-size: 14px;
+    }
+  }
 }
 
 //全屏滚动，子元素，去掉banner条后，内容在剩下的高度中居中。
@@ -106,8 +130,8 @@
   display: table;
   vertical-align: middle;
   height: 100%;
-  margin-top: -400px;
-  padding-top: 400px;
+  margin-top: -@banner-height-big;
+  padding-top: @banner-height-big;
   box-sizing: border-box;
   width: 100%;
   .slider-table-cell {
@@ -115,16 +139,21 @@
     vertical-align: middle;
   }
 
-  @media screen and (max-width: 640px) {
-    padding-top: 320px;
-    margin-top: -320px;
+  @media screen and (max-width: 700px) {
+    padding-top: @banner-height-small;
+    margin-top: -@banner-height-small;
   }
 }
 
 //全屏滚动banner样式
-.full-page-child-wrap {
+#aboutUsFullPage {
   .top-banner .page-title {
-    padding-top: 150px;
+    padding-top: 170px;
+    font-size: 45px;
+    @media screen and (max-width: 700px) {
+      font-size: 36px;
+      padding-top: 110px;
+    }
   }
 }
 

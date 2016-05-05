@@ -51,7 +51,7 @@
     </nav>
 </header>
 
-<div id="dowebok">
+<div id="aboutUsFullPage">
     <div class="section">
             <!--banner条-->
             <div class="top-banner banner-about-brand text-center">
@@ -60,6 +60,8 @@
 
             <div class="container">
                 <div class="slider-text-wrap clearfix">
+                    <img class="slider-img" src="dist/img/about_us_brand.jpg" alt="耗儿鱼店面图片">
+
                     <p >三斤耗儿鱼，隶属于重庆市李子坝餐饮有限公司，是李子坝餐饮公司于2016年推出的重点项
                         目，以“反传统格调江湖”为核心理念的全新品牌。总公司集餐饮服务、加盟管理、系统应用等服
                         务为一体，致力于打造互联网+餐饮时代第一餐饮品牌。
@@ -76,9 +78,6 @@
                         建立了多达41项的选材标准。辅之以独创的烹制工艺，造就了三斤耗儿鱼的特色美味：肉质鲜美细
                         嫩，口感嫩滑Q弹，食之口留余香，回味无穷。
                     </p>
-                </div>
-                <div class="slider-img-wrap">
-                    <img src="dist/img/about_us_brand.jpg" alt="耗儿鱼店面图片">
                 </div>
             </div>
     </div>
@@ -154,7 +153,7 @@
     $(document).ready(function () {
         $('.bxslider-dishes').bxSlider({
             slideWidth: 240,
-            minSlides: 1,
+            minSlides: 2,
             maxSlides: 4,
             moveSlides: 2,
             slideMargin: 30,
@@ -171,7 +170,7 @@
 
         $('.bxslider-store').bxSlider({
             slideWidth: 240,
-            minSlides: 1,
+            minSlides: 2,
             maxSlides: 4,
             moveSlides: 2,
             slideMargin: 30,
@@ -186,7 +185,7 @@
             prevText: '',
         });
 
-        $('#dowebok').fullpage({
+        $('#aboutUsFullPage').fullpage({
             sectionsColor: ['#f1f0e9', '#f1f0e9', '#f1f0e9'],
             navigation: true,
             css3: false,
