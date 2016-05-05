@@ -1140,7 +1140,7 @@ a:focus {
 }
 .header .brand {
   display: inline-block;
-  padding: 15px 0;
+  padding: 35px 0 0;
 }
 .header .brand img {
   height: 70px;
@@ -1271,6 +1271,7 @@ a:focus {
   padding-top: 130px;
   font-size: 52px;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 .top-banner .page-introduce {
   font-size: 28px;
@@ -1537,6 +1538,7 @@ body {
 #aboutUsFullPage .top-banner .page-title {
   padding-top: 170px;
   font-size: 45px;
+  font-weight: normal;
 }
 @media screen and (max-width: 700px) {
   #aboutUsFullPage .top-banner .page-title {
