@@ -1251,15 +1251,16 @@ a:focus {
   background-image: url("../img/banner_dynamic.jpg");
 }
 .banner-about-brand {
-  background-image: url("../img/banner_about_brand.png");
+  background-image: url("../img/banner_about_brand.jpg");
 }
 .banner-about-dish {
-  background-image: url("../img/banner_about_dish.png");
+  background-image: url("../img/banner_about_dish.jpg");
 }
 .banner-about-store {
-  background-image: url("../img/banner_about_store.png");
+  background-image: url("../img/banner_about_store.jpg");
 }
 .top-banner {
+  position: relative;
   height: 400px;
   background-color: #f1f0e9;
   background-repeat: no-repeat;
@@ -1545,6 +1546,20 @@ body {
     font-size: 36px;
     padding-top: 110px;
   }
+}
+#aboutUsFullPage .banner-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -8px;
+}
+#aboutUsFullPage .banner-arrow-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 18px;
+  background: transparent url('../img/banner_about_arrow_bar.png') no-repeat bottom center;
+  background-size: cover;
 }
 .content-wrap {
   position: relative;
