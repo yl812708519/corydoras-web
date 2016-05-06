@@ -1,0 +1,19 @@
+<!--导航菜单-->
+<header class="header">
+    <nav class="nav" id="navbar">
+        <a href="index.html" title="三斤耗儿鱼" class="brand">
+            <img src="/statics/dist/img/logo.png" alt="">
+                </a>
+        <img class="show-menu-icon" style="" src="/statics/dist/img/icon_menu.png" alt="">
+            <ul class="nav-menu">
+                <li id="indexPage"><a href="{siteurl($siteid)}" title="首页">首页</a></li>
+                {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
+                {loop $data $r}
+                <li id="aboutUsPage" {if $catid == $r[catid]}class="active"{/if}>
+                    <a href="{$r[url]}" title="关于{$r['catname']}">{$r['catname']}</a>
+                </li>
+                {/loop}
+                {/pc}
+            </ul>
+            </nav>
+</header>
