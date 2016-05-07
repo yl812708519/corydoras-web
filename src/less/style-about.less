@@ -17,10 +17,10 @@
 //重置导航项目样式，导航点
 #fp-nav {
   padding-top: @banner-height-big;
-  margin-top: -270px !important;
+  margin-top: -230px !important;
 
   @media screen and (max-width: 700px) {
-    margin-top: -348px !important;
+    margin-top: -268px !important;
   }
 
   ul {
@@ -95,33 +95,57 @@
     text-indent: 2em;
     font-size: 17px;
     color: #232323;
-    line-height: 2;
+    line-height: 1.8;
     padding-right: 360px;
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .slider-text-wrap {
+    .slider-img {
+      width: 220px;
+    }
+    p {
+      padding-right: 240px;
+      line-height: 1.5;
+    }
   }
 }
 
 @media screen and (max-width: 1000px) {
   .slider-text-wrap {
     .slider-img {
-      width: 250px;
+      width: 200px;
     }
     p {
       line-height: 1.5;
       font-size: 16px;
-      padding-right: 280px;
+      padding-right: 220px;
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  .slider-text-wrap {
+    .slider-img {
+      width: 160px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 16px;
+      padding-right: 180px;
     }
   }
 }
 @media screen and (max-width: 760px) {
   .slider-text-wrap {
     .slider-img {
-      width: 170px;
+      width: 120px;
+      display: none;
     }
     p {
       line-height: 1.5;
       font-size: 16px;
-      padding-right: 200px;
+      padding-right: 0px;
     }
   }
 }

@@ -15,15 +15,22 @@ $(document).ready(function () {
     });
 
 
-    //导航栏滑动一定距离添加底色
-    var scrollFunc = function (e) {
-        e = e || window.event;
-        if($(window).scrollTop()>250) {
+    //如果是首页就给body添加高度
+    if ($("input[name='whichPages']").val() == 'indexPage') {
+        $('html,body').css({height: '100%',width: '100%',overflow: 'hidden'})
+    }
+
+    window.onscroll = function(){
+        var t = document.documentElement.scrollTop || document.body.scrollTop;
+        var top_div = document.getElementById( "top_div" );
+        if( t >= 250 ) {
             $(".nav").addClass('nav-change-color');
-        }else {
+            $('.brand').css({padding: '10px 0'});
+        } else {
             $(".nav").removeClass('nav-change-color');
+            $('.brand').css({padding: '35px 0'});
         }
-    };
+    }
 
     //首页背景图渐渐变大
     $(".full-screen-bg").css({
